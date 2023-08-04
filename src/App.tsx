@@ -1,26 +1,16 @@
-import viteLogo from '/vite.svg';
+// import viteLogo from '/vite.svg';
+// import reactLogo from './assets/react.svg';
 
-import { useCallback, useState } from 'react';
+import { Layout } from 'components/layout';
 
 import './App.css';
-import reactLogo from './assets/react.svg';
-
-type MenuState = 'closed' | 'opened' | 'opening' | 'closing';
 
 export const App = () => {
-  const [menuState, setMenuState] = useState<MenuState>('closed');
-
-  const closeMenu = useCallback(() => {
-    setMenuState('closed');
-  }, []);
+  const a = ' ';
 
   return (
     <div className="App">
-      <div className="mobile-menu relative">
-        <button className="absolute top" type="button" onClick={closeMenu}>
-          X
-        </button>
-      </div>
+      <Layout />
     </div>
   );
 };

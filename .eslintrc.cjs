@@ -32,6 +32,8 @@ module.exports = {
       'error',
       { ignoreCase: true, ignoreDeclarationSort: true },
     ],
+    'import/first': 'error',
+    'import/newline-after-import': 'error',
     'import/no-unresolved': 'off',
     'import/order': [
       'error',
@@ -94,5 +96,19 @@ module.exports = {
 
     'jsx-a11y/no-static-element-interactions': 'off',
     'jsx-a11y/click-events-have-key-events': 'off',
+
+    '@typescript-eslint/consistent-type-imports': 'warn',
+    '@typescript-eslint/consistent-type-assertions': [
+      'error',
+      { assertionStyle: 'never' },
+    ],
+    '@typescript-eslint/no-misused-promises': [
+      'warn',
+      {
+        checksVoidReturn: {
+          arguments: false,
+        },
+      },
+    ],
   },
 };
