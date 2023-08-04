@@ -1,3 +1,13 @@
+import { ContactForm, ContactInfo, Hero } from 'components/sections';
+
+import { Container } from '.';
+
 export const Main = () => (
-  <h1 className="text-3xl font-bold underline">Hello world!</h1>
+  <main className="bg-neutral-50 overflow-hidden">
+    <Container>
+      <Hero />
+      <ContactInfo />
+      <ContactForm />
+    </Container>
+  </main>
 );

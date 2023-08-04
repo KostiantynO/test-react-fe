@@ -9,5 +9,10 @@ const layouts = {
 export const Layout = () => {
   const layout = useStore(selectLayout);
   const Element = layouts[layout];
-  return <Suspense fallback="">{<Element />}</Suspense>;
+
+  return (
+    <Suspense fallback="">
+      <Element />
+    </Suspense>
+  );
 };

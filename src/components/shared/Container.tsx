@@ -1,5 +1,19 @@
+import classNames from 'classnames';
+
 import type { ReactNode } from 'react';
 
-export const Container = ({ children }: { children: ReactNode }) => (
-  <div className="p-4">{children}</div>
+interface ContainerProps {
+  children: ReactNode;
+  className?: string;
+}
+
+export const Container = ({ children, className }: ContainerProps) => (
+  <div
+    className={classNames(
+      'container max-w-[360px] desktop:max-w-[1440px] bg-red-600',
+      className
+    )}
+  >
+    {children}
+  </div>
 );

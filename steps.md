@@ -15,6 +15,8 @@ yarn add zustand
 yarn add -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 
+yarn add i18next react-i18next
+yarn add classnames
 ```
 
 - √ Select a framework: » React
