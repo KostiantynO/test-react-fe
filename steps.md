@@ -10,6 +10,11 @@ yarn add -D prettier \
             eslint-plugin-react \
             eslint-plugin-react-hooks \
             eslint-plugin-react-refresh
+
+yarn add zustand
+yarn add -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
 ```
 
 - √ Select a framework: » React
