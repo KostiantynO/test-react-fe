@@ -1,5 +1,7 @@
 ```bash
 yarn create vite .
+git init
+yarn add -D prettier prettier-plugin-tailwindcss eslint-config-prettier
 ```
 
 - √ Select a framework: » React
