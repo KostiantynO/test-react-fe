@@ -1,4 +1,4 @@
-import { Footer, Header, Main } from '..';
+import { Footer, Header, Main } from 'components/shared';
 
 const Modern = () => (
   <div>

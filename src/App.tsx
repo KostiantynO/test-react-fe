@@ -3,8 +3,6 @@
 
 import { Layout } from 'components/layout';
 
-import './App.css';
-
 export const App = () => {
   const a = ' ';
 
